@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.label{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.label p{
+    font-size: 12px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    padding-inline: 20px;
+    border-bottom: 1px solid black;
+}
+.btns{
+    width: 15%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.btns button{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 1px solid black
+}
+.title{
+    width: 95%;
+    height: 150px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    /* border: 1px solid black; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+}
+.title h1{
+    font-size: 50px;
+    width: 40%;
+    font-weight: 600;
+
+}
+.title h1 span{
+    font-size: 40px;
+}
+.title button{
+    width: 90px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid black;
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+}
+.grid{
+    width: 95%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 300px 300px;
+}
+.box{
+    border: 1px solid rgb(174, 173, 173);
+}
+.box:nth-child(1){
+    grid-row: 1/2;
+    grid-column: 1/2;
+    background-color: rgb(235, 233, 233);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box:nth-child(1) img{
+    width: 50%;
+    height: 95%;
+}
+.box:nth-child(2){
+    grid-row: 1/2;
+    grid-column: 2/3;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-inline: 5px;
+}
+#s1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+#s1 h3{
+    font-size: 14px;
+}
+#s2 button{
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: transparent;
+
+}
+.box:nth-child(2) h4{
+    font-size: 13px;
+    color: rgb(154, 150, 150);
+}
+.box:nth-child(2) a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+#p1{
+    font-size: 14px;
+}
+.box:nth-child(3){
+    grid-row: 1/2;
+    grid-column: 3/4;
+    background-color: rgb(235, 233, 233);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box:nth-child(3) img{
+    width: 50%;
+    height: 95%;
+}
+.box:nth-child(4){
+    grid-row: 2/3;
+    grid-column: 1/3;
+    background-color: rgb(235, 233, 233);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.box:nth-child(4) img{
+    width: 50%;
+    height: 95%;
+}
+.box:nth-child(5){
+    grid-row: 2/3;
+    grid-column: 3/4;
+    background-color: rgb(235, 233, 233);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box:nth-child(5) img{
+    width: 50%;
+    height: 95%;
+}
+
+
+
+
+/* Responsive */
+@media(max-width:768px){
+    .label p{
+        font-size: 10px;
+    }
+    .btns{
+        width: 30%;
+    }
+    .title{
+        height: 100px;
+    }
+    .title h1{
+        font-size: 23px;
+        width: 65%;
+    }
+    .title h1 span{
+        font-size: 20px;
+    }
+    .grid{
+        width: 96%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .box{
+        width: 100%;
+        height: 300px;
+    }
+}
